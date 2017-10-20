@@ -49,7 +49,7 @@ public class Circle {
 
     public static void main(String[] args) {
     
-        int radius = 1;
+        int radius = 2;
         
         Point center = new Point();
         center.setX(0);
@@ -60,15 +60,13 @@ public class Circle {
         point.setY(1);
         
         Point sectorStarts = new Point();
-        sectorStarts.setX(radius);
+        sectorStarts.setX(1);
         sectorStarts.setY(0);
         
         Point sectorEnds = new Point();
         sectorEnds.setX(0);
-        sectorEnds.setY(radius);
-        
-        //System.out.println(center.getX() + " " + center.getY() + " " + point.getX() + " " + point.getY() + "\n" + areClockwise(vector, point));
-        //System.out.println(isWithinRadius(center,point,radius));
+        sectorEnds.setY(1);
+
         System.out.println(isInsideSector(point, sectorStarts, sectorEnds, center, radius));
     
     }
